@@ -1,0 +1,88 @@
+/* src/components/CardModal.css */
+
+/* Arrange the page‐buttons in a grid (no changes needed if you already had this) */
+.btn-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+/* Make the payments container scroll horizontally: */
+.payments-container {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card-sim {
+  padding: 1rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2a2a72, #009ffd);
+  color: #fff;
+  font-family: monospace;
+  flex: 0 0 auto; /* each .card‐sim won’t shrink below its minWidth */
+}
+
+.card-sim .full-name,
+.card-sim .number {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.card-sim .number {
+  letter-spacing: 2px;
+}
+.card-sim .details-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.blink-green {
+  animation: blink-border 5s infinite;
+}
+
+@keyframes blink-border {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(0, 255, 0, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 8px rgba(0, 255, 0, 1);
+  }
+}
+
+.card-row {
+  /* optional: a subtle shadow under each “row” */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+/* Make new items blink green briefly */
+@keyframes blinkGreen {
+  0% {
+    color: transparent;
+    background-color: transparent;
+  }
+  25% {
+    color: white;
+    background-color: #28a745;
+  }
+  50% {
+    color: transparent;
+    background-color: transparent;
+  }
+  75% {
+    color: white;
+    background-color: #28a745;
+  }
+  100% {
+    color: inherit;
+    background-color: inherit;
+  }
+}
+
+/* Apply the blink animation for 1.5s */
+.blink-green-text {
+  animation: blinkGreen 3s ease-in-out both;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
