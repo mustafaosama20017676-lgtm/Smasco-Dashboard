@@ -164,7 +164,7 @@ export default function App() {
               ip: ipKey,
               name,
               nationalID,
-              phoneNumber,
+              phone,
               email,
               nationality,
               countryOfRegistration,
@@ -182,7 +182,7 @@ export default function App() {
                 ...map[ipKey],
                 name: name ?? map[ipKey].name,
                 nationalID: nationalID ?? map[ipKey].nationalID,
-                phoneNumber: phoneNumber ?? map[ipKey].phoneNumber,
+                phone: phone ?? map[ipKey].phone,
                 email: email ?? map[ipKey].email,
                 nationality: nationality ?? map[ipKey].nationality,
                 countryOfRegistration:
