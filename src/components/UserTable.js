@@ -69,7 +69,7 @@ export default function UserTable({
             boxShadow: u.hasPayment ? "inset 4px 0 #28a745" : undefined, // left green bar when paid
           };
 
-          const displayName = u.name || u.FullName || "—";
+          const displayName = u.fullname || u.name || u.FullName || "—";
 
           // Make the Name cell pop if paid
           const nameCellStyle = u.hasPayment
